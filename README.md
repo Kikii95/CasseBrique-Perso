@@ -1,1 +1,0 @@
-# lyo-t2-amiga-p2-10
