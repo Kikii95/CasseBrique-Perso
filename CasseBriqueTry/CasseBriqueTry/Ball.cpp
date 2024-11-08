@@ -75,6 +75,7 @@ std::pair<int, int> Ball::getDirection() {
     return { directionX, directionY };
 }
 
+
 void Ball::padBounce(sf::RectangleShape& pad) {
     if (ballShape.getGlobalBounds().intersects(pad.getGlobalBounds())) {
         float padCenterX = pad.getPosition().x + pad.getSize().x / 2.0f;
@@ -149,7 +150,7 @@ void Ball::move(float deltaTime, sf::RectangleShape& pad, std::vector<Brick>& br
     wallBounce(Pad);
     padBounce(pad);
 
-    for (auto it = bricks.begin(); it != bricks.end(); /* Pas d'incrï¿½ment ici */) {
+    for (auto it = bricks.begin(); it != bricks.end(); /* Pas d'incrément ici */) {
         if (it->checkCollision(ballShape)) {
             brickBounce(*it);  
             it->destroy();
