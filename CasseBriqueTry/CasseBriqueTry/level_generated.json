@@ -1,0 +1,100 @@
+{
+    "bricks": [
+        {
+            "positionX": 240.0,
+            "positionY": 120.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 360.0,
+            "positionY": 120.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 600.0,
+            "positionY": 120.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 840.0,
+            "positionY": 160.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1080.0,
+            "positionY": 120.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1200.0,
+            "positionY": 120.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1440.0,
+            "positionY": 80.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1440.0,
+            "positionY": 240.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1200.0,
+            "positionY": 280.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 840.0,
+            "positionY": 320.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 480.0,
+            "positionY": 360.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 240.0,
+            "positionY": 360.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 720.0,
+            "positionY": 440.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1080.0,
+            "positionY": 440.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1200.0,
+            "positionY": 440.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        },
+        {
+            "positionX": 1440.0,
+            "positionY": 400.0,
+            "sizeX": 120.0,
+            "sizeY": 40.0
+        }
+    ]
+}
