@@ -1,0 +1,47 @@
+﻿  Game.cpp
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244: 'argument' : conversion de '_Ty2' en 'T', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:         with
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:         [
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:             _Ty2=int
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:         ]
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:         and
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:         [
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:             T=float
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,61): warning C4244:         ]
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244: 'argument' : conversion de '_Ty1' en 'T', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:         with
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:         [
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:             _Ty1=int
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:         ]
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:         and
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:         [
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:             T=float
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(33,40): warning C4244:         ]
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(20,36): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(21,133): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(54,70): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(54,47): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(75,70): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(75,47): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Game.cpp(79,9): error C2039: 'updateScore' n'est pas membre de 'HUD'
+      D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\HUD.h(10,7):
+      voir la déclaration de 'HUD'
+  
+  OptionsMenu.cpp
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Hud.h(21,16): error C2143: erreur de syntaxe : absence de ';' avant '&'
+  (compiler le fichier source 'OptionsMenu.cpp')
+  
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Hud.h(21,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'OptionsMenu.cpp')
+  
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Hud.h(21,30): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+  (compiler le fichier source 'OptionsMenu.cpp')
+  
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Hud.h(31,17): error C3646: 'opMenu' : spécificateur de substitution inconnu
+  (compiler le fichier source 'OptionsMenu.cpp')
+  
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Hud.h(31,5): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+  (compiler le fichier source 'OptionsMenu.cpp')
+  
+D:\ecole\Git\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\OptionsMenu.cpp(89,37): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+  Génération de code en cours...
