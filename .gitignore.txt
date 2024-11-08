@@ -1,0 +1,2 @@
+CasseBriqueTry/.vs/
+SFML-2.5.1/

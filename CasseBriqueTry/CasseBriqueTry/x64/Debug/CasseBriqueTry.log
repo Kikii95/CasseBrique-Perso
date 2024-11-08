@@ -1,0 +1,7 @@
+﻿  LevelManager.cpp
+C:\Users\killi\source\repos\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\Pad.h(3,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+  (compiler le fichier source 'LevelManager.cpp')
+  
+C:\Users\killi\source\repos\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\LevelManager.cpp(67,42): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\killi\source\repos\lyo-t2-amiga-p2-10\CasseBriqueTry\CasseBriqueTry\LevelManager.cpp(68,144): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+  CasseBriqueTry.vcxproj -> C:\Users\killi\source\repos\lyo-t2-amiga-p2-10\CasseBriqueTry\x64\Debug\CasseBriqueTry.exe
