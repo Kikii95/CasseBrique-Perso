@@ -1,8 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-#define SCREEN_WIDTH 1920
-#define SCREEN_HEIGHT 1080
+#define SCREEN_WIDTH 3840
+#define SCREEN_HEIGHT 2160
 
 class MainMenu
 {

@@ -1,11 +1,10 @@
 #pragma once
 #include <iostream>
-#include <SFML/Graphics.hpp>
-#include "Ball.h"
+#include <SFML/Graphics.hpp> #include "Ball.h"
 #include "Brick.h"
 
-#define SCREEN_WIDTH 1920
-#define SCREEN_HEIGHT 1080
+#define SCREEN_WIDTH 3840
+#define SCREEN_HEIGHT 2160
 
 class Pad {
 public:
@@ -14,22 +13,24 @@ public:
     void moveLeft(float deltaTime);
     void moveRight(float deltaTime);
 
-    void setSpeed(float newSpeed);
-    float getSpeed() const;
+    static float originalSpeed;
+    static std::pair<int, int> originalSize;
 
-    std::pair<float, float> getPosition() const;
+    void setSpeed(float newSpeed);
+    float getSpeed() ;
+
+    std::pair<float, float> getPosition() ;
     virtual void setPosition(float positionX, float positionY);
-    std::pair<int, int> getSize() const;
+    std::pair<int, int> getSize() ;
     virtual void setSize(int size);
 
-    sf::RectangleShape getShape() const;  // Modifie pour retourner un Pad avec texture
-    bool loadTexture(const std::string& filePath); // Ajoute une méthode pour charger la texture
+    bool isShieldActive;
 
     void displayPosition();
 
+    void setInvertedControls(bool inverted);
+
 protected:
     float positionX, positionY;
-    float speed;
-    int sizeX, sizeY;
-    sf::Texture padTexture;  // Ajoute un membre pour la texture du pad
+    float speed;     int sizeX, sizeY;
 };

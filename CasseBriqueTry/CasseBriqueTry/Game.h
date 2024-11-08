@@ -1,76 +1,76 @@
 #pragma once
-
 #include <SFML/Graphics.hpp>
-#include <memory>
 #include <vector>
-#include "LevelGenerator.h"
+#include <fstream>
 #include "HUD.h"
 #include "Pad.h"
 #include "Ball.h"
 #include "Brick.h"
 #include "MainMenu.h"
 #include "PauseMenu.h"
-#include "GameOver.h"
+#include <cstdlib>  
+#include <ctime>   
+#include "LevelManager.h"
+#include <memory>
+#include "PadEffect.h"
+#include "BallEffect.h"
+#include <functional>
 #include "Music.h"
 #include "LevelManager.h"
-#include "BallEffect.h"
 
-#define SCREEN_WIDTH 1920
-#define SCREEN_HEIGHT 1080
+
+
+#define SCREEN_WIDTH 3840
+#define SCREEN_HEIGHT 2160
 
 class Game {
 public:
     Game();
     void run();
 
-private:
+    std::vector<std::unique_ptr<BallEffect>> activeBallEffects;
+    void applyEffect(int effectIndex);
+    bool isVictory = false;
+
+protected: 
     sf::RenderWindow window;
     HUD hud;
     Pad pad;
     Ball ball;
     std::vector<Brick> bricks;
-    int lives = 3;
+    int score = 0; 
+    int bonusCount = 0; 
+    std::vector<sf::Sprite> hearts; 
+    sf::Texture heartTexture; 
+    sf::Texture heartLostTexture; 
     bool isGameOver = false;
-    bool isMainMenuActive = true;
-    bool isPaused = false;
-    bool isGameActive = false;  // Ajout de la variable pour suivre l'état de jeu
-    bool isLevelEditorActive = false;
+    
+
+
+private:
+    void processEvents();
+    void resetBall();
+    void loadBrickTexture();
+    void initializeLevelManager();
+    void initializeMusic();
+    void update(float deltaTime);
+    void checkVictoryCondition();
+    void render();
+
+    void updateLevelEditor();
+    void saveLevel();
+    int getNextLevelNumber() ;
+
+    int lives = 3;
     bool isBallLaunched = false;
+    bool isMainMenuActive;
+    bool isPaused;
+    bool isLevelEditorActive = false;
     sf::RectangleShape padShape;
     sf::Clock clock;
     Music music;
-    GameOver gameOverScreen;
+    sf::Event event;
     LevelManager levelManager;
-    sf::RectangleShape background; // Rectangle pour remplir l'écran
-    sf::Texture heartTexture;
-    sf::Texture heartLostTexture;
-    std::vector<sf::Sprite> hearts;
-
-
-    // Ajout de LevelGenerator pour gérer le quadrillage et le placement des briques
-    LevelGenerator levelGenerator;
-
-    // Liste des effets actifs sur la balle
-    std::vector<std::unique_ptr<BallEffect>> activeBallEffects;
-
-    sf::Shader backgroundShader; // Shader pour l'arrière-plan
-    void createInitialBricks(); // Fonction pour créer des briques initiales
-    void processEvents();
-    void update(float deltaTime);
-    void render();
-    void resetBall();
-    void applyEffect(int effectIndex);
-
-    // Méthodes supplémentaires
-    void initializeMusic();
-    void loadBrickTexture();
-    void initializeLevelManager();
-    void updateLevelEditor();
-    void saveLevel();
-    int getNextLevelNumber();
-
-
-
-    // Méthode pour charger les briques depuis un fichier JSON
-    void loadBricksFromJson();
+    std::vector<Ball> activeBalls;
+    void checkLife();
 };

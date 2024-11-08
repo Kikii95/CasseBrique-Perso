@@ -1,29 +1,47 @@
 #pragma once
-#include "pad.h"
-
+#include <functional>
+#include <string>
+#include <vector>
+#include "Pad.h"
 
 enum class PadEffectType {
     PadSpeedBoost,
     PadSpeedNerf,
+    PadSizeBoost,
+    PadSizeNerf,
+    PadSticky,
+    PadInvertedControls,
+    PadMagnet,
+    PadProjectile,
+    PadShield,
+    PadBallMultiplier,
+    PadSliding,
+    PadSplit,
+    PadEnergyDrain,
 };
 
 class PadEffect {
 protected:
     PadEffectType type;
-    Pad& pad; 
+    Pad& pad;
     int duration;
     bool isActive;
+    std::function<void(Pad&)> applyCallback;
+    std::function<void(Pad&)> removeCallback;
+
 
 public:
-    PadEffect(PadEffectType type, Pad& pad, int duration)
-        : type(type), pad(pad), duration(duration), isActive(false) {}
+    PadEffect(PadEffectType type, Pad& pad, int duration,
+        std::function<void(Pad&)> applyCallback,
+        std::function<void(Pad&)> removeCallback);
 
     virtual ~PadEffect() = default;
-    std::string PadEffectTypeToString(PadEffectType type);
-    virtual void applyPadEffect() = 0;
-    virtual void removePadEffect() = 0;
-    void update(float deltaTime);  
-    void display();  
 
-    bool isEffectActive()  { return isActive; }
+    virtual void applyEffect();
+    virtual void removeEffect();
+    virtual void update(float deltaTime);
+    bool isEffectActive() const;
+    std::string PadEffectTypeToString() ;
+    virtual PadEffectType getType()  = 0;
+
 };
